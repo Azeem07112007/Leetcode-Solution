@@ -8,8 +8,8 @@
 Math, Enumeration
 
 ### 🚀 Performance
-- **Runtime:** 1 ms
-- **Memory:** 42.7 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
