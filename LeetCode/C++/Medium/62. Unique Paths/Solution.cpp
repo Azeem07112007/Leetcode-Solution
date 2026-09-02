@@ -1,13 +1,17 @@
 class Solution {
 public:
-    int path(int a,int b,){
-        if(a==1 || b==1){
-            return 1;
-
-        }
-        return path(a-1,b)+path(a,b-1);
+    int rec(int i,int j,int m,int n,vector<vector<int>>&dp){
+        if(i==m||j==n)  return 0;
+        if(i==m-1 && j==n-1)  return 1;
+        if(dp[i][j]!=-1) return dp[i][j];
+        int r=rec(i,j+1,m,n,dp);
+        int d=rec(i+1,j,m,n,dp);
+        int ans=r+d;
+        dp[i][j]=ans;
+        return ans;
     }
     int uniquePaths(int m, int n) {
-        return path(m,n);
+        vector<vector<int>>dp(m,vector<int>(n,-1));
+        return rec(0,0,m,n,dp);
     }
 };
