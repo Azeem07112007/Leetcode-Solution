@@ -8,8 +8,8 @@
 Math, Simulation
 
 ### 🚀 Performance
-- **Runtime:** 0 ms
-- **Memory:** 7.7 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
